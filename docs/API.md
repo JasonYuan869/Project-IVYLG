@@ -76,7 +76,6 @@ Should be empty. If not empty, it will be ignored.
 ---
 ### Create School Listing
 Creates a new school listing.
-This request will fail if a school with the same name already exists.
 #### Endpoint
 ```
 POST https://<API Address>/api/listings

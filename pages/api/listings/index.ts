@@ -28,15 +28,6 @@ export default async function handler(
         return;
       }
       try {
-        // Check if submission with the same title already exists
-        if (await Submission.findOne({name: body.name}) !== null) {
-          res.status(400).
-              json({
-                success: false,
-                error: 'A school with this name already exists',
-              });
-          return;
-        }
         const submission = await Submission.create(body);
         res.status(201).json({success: true, data: submission});
       } catch (e: any) {
