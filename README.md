@@ -14,6 +14,7 @@ The live server is published on Vercel and can be accessed at https://project-iv
 
 ## Known issues
  - The site may freeze for a brief period after selecting the image in the create/modify menu
+ - The night mode toggle overlays on top of the text in mobile view
 
 ## Next steps
  - Load listing data from the database in batches rather than all at once to improve scalability
