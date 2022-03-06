@@ -29,6 +29,15 @@ export default async function handler (
       break
     case 'PATCH':
       try {
+        // Check if submission with the same title already exists
+        if (await Submission.findOne({name: body.name}) !== null) {
+          res.status(400).
+            json({
+              success: false,
+              error: 'A school with this name already exists',
+            });
+          return;
+        }
         const submission = await Submission.findByIdAndUpdate(id, body,
           { new: true })
         if (submission === null) {
