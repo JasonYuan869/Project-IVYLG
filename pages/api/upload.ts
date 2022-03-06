@@ -6,6 +6,10 @@ import multer from 'multer'
 const uploadHandler = multer({
   storage: new MulterGoogleCloudStorage({
     acl: 'publicRead',
+    credentials: {
+      client_email: process.env.GCS_KEY_CLIENT_EMAIL,
+      private_key: process.env.GCS_KEY_PRIVATE_KEY,
+    },
   }),
 })
 
