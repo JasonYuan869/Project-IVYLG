@@ -64,7 +64,7 @@ const Home: NextPage = () => {
       <AddButton size="lg" pos="fixed" right="1rem" bottom="1rem"
                  colorScheme="linkedin" aria-label="Add listing"/>
       <FormControl display="flex" alignItems="center" pos="fixed" left="1rem"
-                   bottom="1rem">
+                   bottom="1rem" w='inherit'>
         <FormLabel my="auto" htmlFor="toggleDark">Night mode</FormLabel>
         <Switch id="toggleDark" isChecked={colorMode === 'dark'}
                 onChange={toggleColorMode}/>
