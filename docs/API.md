@@ -10,7 +10,7 @@ This documentation is structured with types and definitions first, followed by t
 | name  | true     | string  | The name of the school (max 60 characters).                                          |
 | about | true     | string  | The description of the school (max 2000 characters).                                 |
 | image | true     | string  | A URL for the image of the school.                                                   |
-| __v   | true     | integer | Internal Mongoose version key. Can safely be ignored.                                |
+| __v   | false     | integer | Internal Mongoose version key. Can safely be ignored.                                |
 
 ---
 ### ApiError
