@@ -10,7 +10,7 @@ The live server is published on Vercel and can be accessed at https://project-iv
  - Add, modify, and delete listings
    - Listings include a name, description, and an image that the user uploads to our cloud
  - Fully typed code written in Typescript
- - Fully documented API which can be found [here](docs/API)
+ - Fully documented API which can be found [here](docs/API.md)
 
 ## Known issues
  - The site may freeze for a brief period after selecting the image in the create/modify menu
